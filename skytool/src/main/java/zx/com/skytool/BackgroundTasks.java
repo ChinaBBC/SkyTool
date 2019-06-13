@@ -10,7 +10,12 @@ package zx.com.skytool;
 
 import android.os.Handler;
 
-
+/**
+ *
+ *@auther zx
+ *@time 2019/6/13
+ *@describe 后台task
+ */
 public class BackgroundTasks {
 
     private Handler mHandler = new Handler();
