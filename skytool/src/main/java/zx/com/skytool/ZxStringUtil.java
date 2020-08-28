@@ -15,7 +15,9 @@ public final class ZxStringUtil {
     public static boolean isEmpty(@Nullable CharSequence str){
         return str == null || str.length() == 0 || str.equals("null");
     }
-
+    public static boolean isNotEmpty(@Nullable CharSequence str){
+        return !isEmpty(str);
+    }
     //数字字符串的乘法运算
     public static String multiplication(String a,String b,int scale){
         if (scale<0)

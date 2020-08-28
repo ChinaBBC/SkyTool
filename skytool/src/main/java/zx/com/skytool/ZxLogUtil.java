@@ -16,7 +16,7 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logNormal(String msg){
-        Log.i(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.i(TAG,msg);
     }
 
     /**
@@ -24,7 +24,7 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logError(String msg){
-        Log.e(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.e(TAG,msg);
     }
 
     /**
@@ -32,7 +32,7 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logDebug(String msg){
-        Log.d(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.d(TAG,msg);
     }
 
     /**
@@ -40,7 +40,7 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logWarning(String msg){
-        Log.w(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.w(TAG,msg);
     }
 
     /**
@@ -48,7 +48,7 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logVerbose(String msg){
-        Log.v(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.v(TAG,msg);
     }
 
     /**
@@ -56,6 +56,6 @@ public final class ZxLogUtil {
      * @param msg
      */
     public static void logBad(String msg){
-        Log.wtf(TAG,msg);
+        if (SkyTool.isEnableDebug()) Log.wtf(TAG,msg);
     }
 }

@@ -45,5 +45,4 @@ public class BackgroundTasks {
         instance = new BackgroundTasks();
     }
 
-
 }

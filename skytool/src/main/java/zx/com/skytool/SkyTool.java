@@ -10,6 +10,7 @@ import android.content.Context;
  */
 public final class SkyTool {
     private static Context appContext;
+    private static boolean enableDebug = false;
     public static Context getInstance() {
         return appContext;
     }
@@ -17,5 +18,13 @@ public final class SkyTool {
     public static void init(Context context){
         appContext = context;
         BackgroundTasks.initInstance();
+    }
+
+    public static boolean isEnableDebug() {
+        return enableDebug;
+    }
+
+    public static void setEnableDebug(boolean debug) {
+        enableDebug = debug;
     }
 }

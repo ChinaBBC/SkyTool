@@ -38,9 +38,10 @@ public final class ZxSharePreferenceUtil {
     }
 
     //使用application context 避免内存溢出
-    public void init(Context context){
+    public ZxSharePreferenceUtil init(Context context){
         preferences = PreferenceManager.getDefaultSharedPreferences(context
                 .getApplicationContext());
+        return preferencesUtil;
     }
 
 
